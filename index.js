@@ -72,4 +72,7 @@ async function Search(query){
     renderMain(data.articles)
 }
 
+exports.default=series(scssTask, jsTask, browserSyncServe, watchTask);
+
+exports.default=series(scssTask, jsTask);
 
