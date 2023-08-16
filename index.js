@@ -74,5 +74,5 @@ async function Search(query){
 
 exports.default=series(scssTask, jsTask, browserSyncServe, watchTask);
 
-exports.default=series(scssTask, jsTask);
+exports.build=series(scssTask, jsTask);
 
